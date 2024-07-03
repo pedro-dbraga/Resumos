@@ -1,0 +1,76 @@
+Aqui esta o resumo que criei enquanto aprendo sobre os comandos linux e um pouco sobre o linux tambem.
+Não se desespere com palavras "novas" tudo sera explicado no decorrer do Resumo.
+
+Linux
+O linux é um kernel. Ele não é um sistema operacional como muitos acham. Uma distribuição Linux é composta por uma coleção de aplicativos mais o kernel Linux. 
+
+Kernel 
+Kernel vem de núcleo, ele é o núcleo do Sistema Operacional. O kernel é um software que é responsável por gerenciar e acessar os recursos de hardware. Por exemplo eu quero imprimir um arquivo:
+A aplicação vai informar o Kernel qual arquivo será imprimido e o Kernel vai comunicar a impressora.
+
+Distribuições
+As distro são um conjunto de drivers, software e interfaces para se adequar da melhor forma ao propósito final do sistema operacional.
+Server
+As principais distro para servidores são: Red Hat Enterprise Linux, Debian, CentOS e a SUSE.
+Desktop
+As principais distro para desktop são: Ubuntu, Linux Mint, Fedora, openSUSE, Deepin e Manjaro. Todas elas são derivações dos principais distro de servers.
+
+Interface
+A interface gráfica é o que visualizamos: menu iniciar, pastas, imagens ou apenas textos.
+
+Comandos
+Todos comando tem suas variações e especificações
+Essas variações são visualizadas com o (comando mais --help)
+
+Navegação
+
+cd {é o comando de navegação}
+cd /caminhoDoDiretorio {vai para o diretório escolhido}
+cd .. {volta um diretório}
+cd ~ {volta para o diretório do usuário atual}
+
+cd /home/pedro {caminho absoluto}
+cd pedro {caminho relativo quando já estamos dentro de um diretório}
+
+pwd {mostra o diretório atual que estamos}
+
+ls {lista todos os diretórios que estão dentro do diretório que estamos}
+
+clear limpa a tela
+EXECUTAR DOIS COMANDO SEGUIDO É SÓ COLOCA UMA VÍRGULA NO MEIO
+exemplo: clear ; date
+sudo su - {vai para o poder de usuário}
+
+Criar e remover arquivos e diretórios
+
+mkdir {cria um diretório}
+mkdir -p { cria diretório dentro de diretório}
+
+
+Rmdir apaga um diretório
+Rm apaga um arquivo normal
+rm -r apaga o diretório com tudo dentro 
+
+Mover, Copiar, Renomear
+
+mv {move ou renomeia arquivos e diretórios}
+mv origem . {o ponto é o diretório atual, ou seja, traz o diretório ou arquivo para onde estamos}
+
+cp {cria uma cópia de um arquivo}
+cp Exemplo1 /home {cópia o arquivo lá no /home, ou seja, origem e destino}
+cp -r {copia o diretório e tudo dentro}
+
+File Globbing - Caracteres Coringa
+
+ls Aula* {o * vai fazer com que tudo que tenha Aula + alguma coisa ou nada seja listado, por exemplo: Aula1, Aula11, Aula, Aula12345}
+ls Aula[12345] é a mesma coisa que ls Aula[1-5] {ira listar arquivos que começam com Aula e que tenham mais um caracter de 1 ao 5}
+é possivel usar o []* juntos
+ls {Aula,AULA} o chave é uma string ao invés de caractere
+ls Aula1? {qualquer 1 caractere no lugar dele}
+
+
+
+
+
+
+
