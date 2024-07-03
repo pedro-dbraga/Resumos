@@ -67,3 +67,6 @@ ls Aula[12345] é a mesma coisa que ls Aula[1-5] {ira listar arquivos que começ
 é possivel usar o []* juntos
 ls {Aula,AULA} o chave é uma string ao invés de caractere
 ls Aula1? {qualquer 1 caractere no lugar dele}
+
+Links
+
