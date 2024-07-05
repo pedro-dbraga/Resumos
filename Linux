@@ -1,4 +1,4 @@
-Aqui esta o resumo que criei enquanto aprendo sobre os comandos linux e um pouco sobre o linux tambem.
+Aqui esta o resumo que criei enquanto aprendo sobre os comandos linux.
 Não se desespere com palavras "novas" tudo sera explicado no decorrer do Resumo.
 
 Linux
@@ -70,3 +70,40 @@ ls Aula1? {qualquer 1 caractere no lugar dele}
 
 Links
 
+O link serve para vocẽ evitar de usar tantos caracteres para se referir a algo, ganhando tempo nos comandos
+O link simbolico esta diretamente ligado ao arquivo ou diretorio alvo, se renomear/excluir/mover ele perde o efeito
+ln -s nomeDoArquivo nomeDoLink {link simbólico aponta para um arquivo}
+
+Agrupar e Compactar
+
+tar {agrupa arquivos}
+tar cf {cria um arquivo de backup}
+tar xf {extrai um arquivo de um bloco compactado}
+tar tf {lista o conteúdo agrupado}
+
+gzip {compacta arquivos e "apaga o arquivo compactado"}
+gzip -k {compacta mas nao apaga}
+gzip -d ou gunzip {descompacta}
+
+tar czf novo.tgz nomedoalvo {agrupa e compacta}
+tar xzf novo.tgz {extrai um bloco compactado}
+-C indica o local aonde sera desconpactado
+
+Busca Por Arquivos
+
+find /lugar -name {busca arquivos e diretórios}
+locate {não especifica o diretório}
+whereis {indica o caminho de palavras que começam com aquele “alvo”}
+which {so procura nos diretórios path}
+
+Arquivos de texto
+
+cat {abre arquivos txt no terminal}
+less {mais controle em arquivos grandes txt}
+/ <- Ferramenta de busca dentro do less tipo o cntrl + F
+n chama a próxima ocorrência da palavra 
+? debaixo para cima a busca inverso do /
+para sair do less é só apertar q
+
+>> concatena dois arquivos
+head e tail servem para mostrar o começo e fim do arquivo respectivamente
